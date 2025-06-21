@@ -25,7 +25,7 @@ namespace PokemonCatch
     {
         private Timer timer;
         private Random random = new Random();
-        private string folderPath = @"C:\Users\12002009\Documents\Cadvanced\PokemonCatch\PokemonCatch\pokemon\"; // Replace with your folder path
+        private string folderPath = @"M:\Pokemon\PokemonCatch\PokemonCatch\pokemon\"; // Replace with your folder path
         public int randomNumber;
         private int previousRandomNumber = -1;
         public string trainerName;

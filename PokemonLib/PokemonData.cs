@@ -34,7 +34,7 @@ namespace PokemonLib
             dtPokemon.Columns.Add(POKEMON_COLUMN_TYPE_1, typeof(string));
             dtPokemon.Columns.Add(POKEMON_COLUMN_TYPE_2, typeof(string));
 
-            SqlConnection conn = new SqlConnection(@"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=PokemonCatch;Data Source=PF2B1ZLX\SQLEXPRESS");
+            SqlConnection conn = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB;Database=Pokemon;Trusted_Connection=True;"); // Replace with your connection string
             SqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = "select * from Pokemons";
             cmd.CommandType = CommandType.Text;
